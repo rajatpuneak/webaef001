@@ -69,7 +69,11 @@ if(isset($_POST['name']))
 		  });
 		});
 	</script>
-	
+	<script>
+            $(function () {
+                $("#pgHeader").load("header.html");
+            });
+        </script>
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -85,9 +89,9 @@ if(isset($_POST['name']))
 </head>
 <body>
 <div class="wrap-body">
-
+<div id="pgHeader">
 <!--////////////////////////////////////Header-->
-<header>
+<!--<header>
 	<div class="zerogrid">
 		<div class="wrap-header">
 			<div class="row">
@@ -140,8 +144,8 @@ if(isset($_POST['name']))
 			</ul>
 		</nav>
 	</div>
-</header>
-
+</header>-->
+</div>
 <section id="container">
 	<div class="wrap-container">
 		<div class="zerogrid">

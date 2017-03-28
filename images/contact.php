@@ -85,9 +85,9 @@ if(isset($_POST['name']))
 </head>
 <body>
 <div class="wrap-body">
-
+<div id="pgHeader">
 <!--////////////////////////////////////Header-->
-<header>
+<!--<header>
 	<div class="zerogrid">
 		<div class="wrap-header">
 			<div class="row">
@@ -140,8 +140,8 @@ if(isset($_POST['name']))
 			</ul>
 		</nav>
 	</div>
-</header>
-
+</header>-->
+</div>
 <section id="container">
 	<div class="wrap-container">
 		<div class="zerogrid">

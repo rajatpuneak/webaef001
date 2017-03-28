@@ -57,6 +57,11 @@
             });
         });
     </script>
+    <script>
+            $(function () {
+                $("#pgHeader").load("header.html");
+            });
+        </script>
     <!--[if lt IE 8]>
                <div style=' clear: both; text-align:center; position: relative;'>
                   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -73,7 +78,8 @@
 <body>
     <div class="wrap-body">
         <!--////////////////////////////////////Header-->
-        <header>
+        <div id="pgHeader">
+        <!--<header>
             <div class="zerogrid">
                 <div class="wrap-header">
                     <center>
@@ -113,7 +119,8 @@
                               </ul>
                            </nav>
                         </div>
-                  </header>
+                  </header>-->
+                  </div>
                   <section id="container">
 
                       <div class="wrap-container">

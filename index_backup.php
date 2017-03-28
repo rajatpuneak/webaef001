@@ -105,7 +105,8 @@ include("config.php");
     <body>
         <div class="wrap-body">
             <!--////////////////////////////////////Header-->
-            <header>
+            <div id="pgHeader">
+            <!--<header>
                 <div class="zerogrid">
                     <div class="wrap-header">
                         <center>
@@ -145,7 +146,8 @@ include("config.php");
                               </ul>
                            </nav>
                         </div>
-                  </header>
+                  </header>-->
+                  </div>
                   <section id="container">
                   <div class="wrap-container">
                   <div class="zerogrid">
