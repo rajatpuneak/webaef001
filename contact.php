@@ -3,8 +3,7 @@
 
 $text = "<span style='color:red; font-size: 35px; line-height: 40px; magin: 10px;'>Error! Please try again.</span>";
 
-if(isset($_POST['name']))
-{
+if(isset($_POST['name'])){
 	$name=$_POST['name'];
 	$email=$_POST['email'];
 	$message=$_POST['message'];
