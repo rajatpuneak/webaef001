@@ -91,16 +91,16 @@ only screen and (max-width: 760px),
 	/*
 	Label the data
 	*/
-	td:nth-of-type(1):before { content: "First Name"; }
-	td:nth-of-type(2):before { content: "Last Name"; }
-	td:nth-of-type(3):before { content: "Job Title"; }
-	td:nth-of-type(4):before { content: "Favorite Color"; }
-	td:nth-of-type(5):before { content: "Wars of Trek?"; }
-	td:nth-of-type(6):before { content: "Porn Name"; }
-	td:nth-of-type(7):before { content: "Date of Birth"; }
-	td:nth-of-type(8):before { content: "Dream Vacation City"; }
-	td:nth-of-type(9):before { content: "GPA"; }
-	td:nth-of-type(10):before { content: "Arbitrary Data"; }
+	td:nth-of-type(1):before { content: "Name"; }
+	td:nth-of-type(2):before { content: "Ejamaat Id"; }
+	td:nth-of-type(3):before { content: "Mohallah"; }
+	td:nth-of-type(4):before { content: "Email"; }
+	td:nth-of-type(5):before { content: "Mobile"; }
+	td:nth-of-type(6):before { content: "FMB Thali"; }
+	td:nth-of-type(7):before { content: "Qarzan Hasana Scheme"; }
+	td:nth-of-type(8):before { content: "Ejamaat Id"; }
+	td:nth-of-type(9):before { content: "Family Member Name"; }
+	td:nth-of-type(10):before { content: "Mobile No"; }
 }
     </style>
 
@@ -362,7 +362,7 @@ only screen and (max-width: 760px),
         </footer>
         <script type="text/javascript">
             $(function() {
-                if ($.browser.msie && $.browser.version.substr(0, 1) < 7) {
+                if (navigator.userAgent.match(/msie [6]/i)){
                     $('li').has('ul').mouseover(function() {
                         $(this).children('ul').css('visibility', 'visible');
                     }).mouseout(function() {

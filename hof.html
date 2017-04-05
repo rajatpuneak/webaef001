@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)http://poonajamaat.org/vajebaat/hof_form.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Profile -- Update</title>
+    <link rel="stylesheet" type="text/css" media="all" href="./hofFiles/ej.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./hofFiles/colorbox.css">
+    <script src="./hofFiles/jquery.min.js.download"></script>
+    <script type="text/javascript" src="./hofFiles/jquery.colorbox-min.js.download"></script>
+    <script type="text/javascript" src="./hofFiles/livevalidation.js.download"></script>
+
+    <!--<script type="text/javascript"-->
+    <!--	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            alert('Please enter silafitra details.');
+            $("#mardo").focus();
+
+            $("#btnPrint").colorbox({
+                width: "50%",
+                inline: true,
+                href: "#confirm_box"
+            });
+
+            $("#okButton").click(function () {
+                var url = 'print_form.php?silafitra=';
+                url = url + $("#mardo").val() + "|";
+                url = url + $("#bairo").val() + "|";
+                url = url + $("#gairbalig").val() + "|";
+                url = url + $("#hamal").val() + "|";
+                url = url + $("#marhoom").val() + "|";
+                url = url + $("#total").val() + "|";
+                url = url + $("#token_time_id").val();
+
+                $("#btnPrint").attr('disabled', 'disabled');
+                $("#okButton").attr('disabled', 'disabled');
+
+                newwindow = window.open(url, 'print_window', 'height=500,width=600,resizable=yes,toolbars=no,location=no');
+                if (window.focus) {
+                    newwindow.focus();
+                }
+
+                $.fn.colorbox.close();
+            });
+
+            $("#cancelButton").click(function () {
+                $.fn.colorbox.close();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <table width="99%" border="0" align="center" style="MARGIN-TOP: 25px">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <h1 align="center" class="borderh1"><a href="http://poonajamaat.org/">Poona Jamaat</a></h1>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="clear"></div>
+    <div id="name">
+        <!--START name-->
+        <div id="menuname" style="float:left">
+            <!--START menuname-->
+            <ul>
+                <li><a style="text-decoration: underline;" href="http://poonajamaat.org/vajebaat/print_form_type.php">Go Back</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menuname">
+            <!--START menuname-->
+            <ul>
+                <li>Ejamaat Id :50450029<b>&nbsp;|&nbsp;</b>Aliasgar Akbarali Chaiwala<b>&nbsp;|&nbsp;</b>
+                    <a style="text-decoration: underline;" href="http://poonajamaat.org/vajebaat/logout.php">Log Out</a></li>
+            </ul>
+        </div>
+        <!--END menuname-->
+    </div>
+    <div class="clear"></div>
+    <div>
+        <div>
+            <div id="UptPanel">
+                <!-- First -->
+                <!-- Second -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+
+                                <div id="divBox" style="width: 90%;" class="box" align="center">
+                                    <div id="boxStart2_divHead">
+                                        <h1 class="borderh1">POONA JAMAAT &nbsp;<span class="style1">-----------------------------------------------------------</span>&nbsp;1437/2016</h1>
+                                    </div>
+                                    <div class="content">
+                                        <table class="tbl" align="center" cellpadding="5" cellspacing="5" width="96%">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="32%" align="right">Serial Number: <strong>109</strong></td>
+                                                    <td width="34%" rowspan="4" align="left"><img src="./hofFiles/center_logo.jpg" alt="centerlogo"
+                                                            name="centerlogo" width="321" height="117" id="centerlogo" style="margin-left: 10px;"></td>
+                                                    <td width="34%" rowspan="4" align="left"><img alt="50450029" height="95" src="./hofFiles/image.php"
+                                                            275="" id="logo" style="padding: 28px 0 14px; margin-left: 55px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right">Sabil Code: <strong> A0027</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right">Ejamaat ID:<strong> 50450029</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right">Name: <strong>Aliasgar Akbarali Chaiwala						</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2" align="right">Address:
+                                                        <strong>Pleasant Park II, Flat No. 23, Bldg No. C/8, Pune Solapur Road, 411013						</strong></td>
+                                                    <td align="left">Mohallah: <strong>FATIMA NAGAR </strong></td>
+                                                    <td align="left">Last Year Vajebat : <strong>353000</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">Sector: <strong></strong></td>
+                                                    <td align="left">SubSector: <strong></strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right">Phone :&nbsp; </td>
+                                                    <td align="left">Mobile: +919922990762</td>
+                                                    <td align="left">Email: allu1982@gmail.com</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <table class="tbl" align="center" cellpadding="5" cellspacing="5" width="96%">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="right" width="50%">
+                                                        <div style="width: 100%">
+                                                            <table width="100%" border="1" class="tbl">
+                                                                <caption>Sila Fitra</caption>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="col" align="left"><strong>Type</strong></th>
+                                                                        <th scope="col" width="30px" align="left">No of Persons</th>
+                                                                        <th scope="col" align="left">Per Head</th>
+                                                                        <th scope="col" align="left">Rupees</th>
+                                                                        <th scope="col" align="left">Paise</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Mardo</th>
+                                                                        <td align="left"><input name="mardo" class="textbox" id="mardo" tabindex="1"
+                                                                                value="" onkeyup="changeValue(this.value,216.04,&#39;mardo&#39;);total();"></td>
+                                                                        <td>216.04</td>
+                                                                        <td id="mardor"></td>
+                                                                        <td id="mardop"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Bairo</th>
+                                                                        <td align="left"><input name="bairo" class="textbox" id="bairo" tabindex="1"
+                                                                                value="" onkeyup="changeValue(this.value,216.04,&#39;bairo&#39;);total();"></td>
+                                                                        <td>216.04</td>
+                                                                        <td id="bairor"></td>
+                                                                        <td id="bairop"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Gair Balig</th>
+                                                                        <td align="left"><input name="gairbalig" class="textbox" id="gairbalig"
+                                                                                tabindex="1" value="" onkeyup="changeValue(this.value,108.02,&#39;gairbalig&#39;);total();"></td>
+                                                                        <td>108.02</td>
+                                                                        <td id="gairbaligr"></td>
+                                                                        <td id="gairbaligp"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Hamal</th>
+                                                                        <td align="left"><input name="hamal" class="textbox" id="hamal" tabindex="1"
+                                                                                value="" onkeyup="changeValue(this.value,108.02,&#39;hamal&#39;);total();"></td>
+                                                                        <td>108.02</td>
+                                                                        <td id="hamalr"></td>
+                                                                        <td id="hamalp"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Marhoom</th>
+                                                                        <td align="left"><input name="marhoom" class="textbox" id="marhoom"
+                                                                                tabindex="1" value="" onkeyup="changeValue(this.value,108.02,&#39;marhoom&#39;);total();"></td>
+                                                                        <td>108.02</td>
+                                                                        <td id="marhoomr"></td>
+                                                                        <td id="marhoomp"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+
+                                                    <td align="right" width="48%" colspan="2">
+                                                        <div style="width: 100%">
+                                                            <table width="100%" border="1">
+                                                                <caption>Vajebaat</caption>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="col" align="left">Vajebaat</th>
+                                                                        <th scope="col" align="left">Amount</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Zakat ul Maal</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Nazrul Makaam (A.S)</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Khumoos</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Kaffarat Uz Zunoob</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Niyaz Minnat</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" align="left">Najwa Syedna (TUS)</th>
+                                                                        <td>&nbsp;</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="3" align="right">
+                                                        <table width="100%" border="1">
+                                                            <caption>Totals</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="col" align="left">Total</th>
+                                                                    <th scope="col" align="left">Amount</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" align="left"><input type="hidden" id="total">Sila Fitra Total</th>
+                                                                    <td id="stotal">&nbsp;
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" align="left">Vajebaat Total</th>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">&nbsp;</th>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" align="left">Others Total</th>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td colspan="2" align="right"><span class="style2">Vajebaat Total</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right" colspan="2">
+                                                        <h2 class="style3">GRAND TOTAL</h2>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right" colspan="2">Abde Syedna (TUS) <br> Sign _______________________________<br> Al Amil
+                                                        ul Hazir</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style=" background: green; color: #fff; ">
+                                                        <b>SELECT Bethak Date : </b> <select name="token_no" id="token_no">
+                                                            <option>Select</option>					
+										<option value="11">Wednesday 29-Jun-16</option>
+										<option value="12">Thursday 30-Jun-16</option>
+										<option value="13">Sunday 03-Jul-16</option>
+									</select>
+
+                                                        <script type="text/javascript">
+                                                                                                               var token_no = new LiveValidation('token_no');
+                                                                                                               token_no.add(Validate.Exclusion, {
+                                                                                                                   within: ['Select'],
+                                                                                                                   failureMessage: "Please Select Bethak Date"
+                                                                                                               });
+                                                        </script>
+                                                    </td>
+                                                    <td style=" background: green; color: #fff; ">
+                                                        <b>SELECT Bethak Time</b> : <select name="token_time_id" id="token_time_id">
+						<option value="select">Select</option>
+					</select>
+
+                                                        <script type="text/javascript">
+                                                            var token_time_id = new LiveValidation('token_time_id');
+                                                            token_time_id.add(Validate.Exclusion, {
+                                                                within: ['Select'],
+                                                                failureMessage: "Please Select Bethak Time"
+                                                            });
+                                                        </script>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" align="left"><b>Instructions:</b><br> * Denotes Mandatory Fields<br> Please select
+                                                        proper value for Markaz Field.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <div style="clear:both"></div>
+                                <input type="hidden" id="total">
+                                <input name="btnUpdate" value="Print" onclick="total();" id="btnPrint" class="btnactive cboxElement" type="button" style="display:none">
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div style="display:none">
+        <div id="confirm_box" style="padding:10px; background:#fff;">
+            <p><strong>Please Check That You have 2 pages in the printer and the printer is properly connected</strong></p>
+            <p>You will be allowed only one print<br>
+            </p>
+            <input type="button" id="okButton" class="btnactive" value="Print">
+
+            <input type="button" id="cancelButton" class="btnactive" value="Cancel">
+        </div>
+    </div>
+    <script type="text/javascript">
+                                                                               $(document).ready(function () {
+                                                                                   $('#token_time_id').change(function (e) {
+                                                                                       var valueSelected = this.value;
+                                                                                       if (valueSelected != 'select') {
+                                                                                           $("#btnPrint").show();
+                                                                                       } else {
+                                                                                           $("#btnPrint").hide();
+                                                                                       }
+                                                                                   });
+
+                                                                                   $('#token_no').change(function (e) {
+                                                                                       var valueSelected = this.value;
+                                                                                       $.get("get_bethak_info.php", {
+                                                                                           token_id: valueSelected
+                                                                                       })
+                                                                                           .done(function (data) {
+                                                                                               $("#token_time_id").html(data);
+                                                                                           });
+                                                                                   });
+                                                                               });
+
+                                                                               function changeValue(val, amount, type) {
+                                                                                   var typer = type + "r";
+                                                                                   var typep = type + "p";
+                                                                                   var tamount = (val * amount) + "";
+                                                                                   if (tamount == 0) {
+                                                                                       document.getElementById(typer).innerHTML = 0;
+                                                                                       document.getElementById(typep).innerHTML = 0;
+
+                                                                                   } else {
+                                                                                       famount = tamount.split(".");
+                                                                                       document.getElementById(typer).innerHTML = famount[0];
+                                                                                       if (typeof famount[1] != 'undefined') {
+                                                                                           document.getElementById(typep).innerHTML = famount[1].substr(0, 2);
+                                                                                       } else {
+                                                                                           document.getElementById(typep).innerHTML = 0;
+                                                                                       }
+                                                                                   }
+                                                                               }
+
+                                                                               function total() {
+                                                                                   var mardo = 0;
+                                                                                   var bairo = 0;
+                                                                                   var gair = 0;
+                                                                                   var hamal = 0;
+                                                                                   var marhoom = 0;
+                                                                                   if (document.getElementById('mardor').innerHTML != "" && document.getElementById('mardop').innerHTML != "")
+                                                                                       mardo = (document.getElementById('mardor').innerHTML + "." + document.getElementById('mardop').innerHTML) * 1;
+                                                                                   if (document.getElementById('bairor').innerHTML != "" && document.getElementById('bairop').innerHTML != "")
+                                                                                       bairo = (document.getElementById('bairor').innerHTML + "." + document.getElementById('bairop').innerHTML) * 1;
+                                                                                   if (document.getElementById('gairbaligr').innerHTML != "" && document.getElementById('gairbaligp').innerHTML != "")
+                                                                                       gair = (document.getElementById('gairbaligr').innerHTML + "." + document.getElementById('gairbaligp').innerHTML) * 1;
+                                                                                   if (document.getElementById('hamalr').innerHTML != "" && document.getElementById('hamalp').innerHTML != "")
+                                                                                       hamal = (document.getElementById('hamalr').innerHTML + "." + document.getElementById('hamalp').innerHTML) * 1;
+                                                                                   if (document.getElementById('marhoomr').innerHTML != "" && document.getElementById('marhoomp').innerHTML != "")
+                                                                                       marhoom = (document.getElementById('marhoomr').innerHTML + "." + document.getElementById('marhoomp').innerHTML) * 1;
+
+                                                                                   var total = mardo + bairo + gair + hamal + marhoom;
+
+                                                                                   document.getElementById('total').value = Math.round(total * 100) / 100;
+                                                                                   document.getElementById('stotal').innerHTML = Math.round(total * 100) / 100;
+                                                                               }
+    </script>
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+        <div id="cboxWrapper">
+            <div>
+                <div id="cboxTopLeft" style="float: left;"></div>
+                <div id="cboxTopCenter" style="float: left;"></div>
+                <div id="cboxTopRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxMiddleLeft" style="float: left;"></div>
+                <div id="cboxContent" style="float: left;">
+                    <div id="cboxTitle" style="float: left;"></div>
+                    <div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button>
+                    <button
+                        id="cboxSlideshow"></button>
+                        <div id="cboxLoadingOverlay" style="float: left;"></div>
+                        <div id="cboxLoadingGraphic" style="float: left;"></div>
+                </div>
+                <div id="cboxMiddleRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxBottomLeft" style="float: left;"></div>
+                <div id="cboxBottomCenter" style="float: left;"></div>
+                <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+    </div>
+</body>
+
+</html>

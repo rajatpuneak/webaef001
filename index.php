@@ -111,48 +111,7 @@ include("config.php");
         <div class="wrap-body">
             <!--////////////////////////////////////Header-->
             <div id="pgHeader">
-            <!--<header>
-                <div class="zerogrid">
-                    <div class="wrap-header">
-                        <center>
-                            <div class="logo"><img alt="Aqa bismillah" src="images/ezgif.com-gif-maker.gif"></div>
-                        </center>
-                        <div class="row">
-                            <div class="col-2-3">
-                                <div class="wrap-col">
-                                    <div class="logo">
-                                        <h1>ANJUMAN-E-FATEMI</h1>
-                                        <label>Dawoodi Bohara Jamaat Fatemi Mohalla, Poona</h5>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-1-3">
-                                 <div class="wrap-col">
-                                    <div class="logo"><img src="images/1.png" alt="" width="300" height="100" style="border:0" >
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <nav id="menu-wrap">
-                              <div id="menu-trigger">Menu</div>
-                              <ul id="menu" style="display: none;">
-                                 <li><a href="index.php">Home</a></li>
-                                 <li><a href="admin.html">Admin</a></li>
-                                 <li><a href="committees.html">Committees</a></li>
-                                 <li>
-                                    <a href="#">FMB</a>				
-                                    <ul>
-                                       <li><a href="#">FMB Menu</a></li>
-                                       <li><a href="#">Contact</a></li>
-                                       <li><a href="#">FMB Registration</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="contact.html">Contacts</a></li>
-                              </ul>
-                           </nav>
-                           
-                        </div>
-                  </header>-->
+           
 </div>
                   <section id="container">
 	<div class="wrap-container">
@@ -216,7 +175,7 @@ include("config.php");
                <script type="text/javascript">
                
                                            $(function () {
-                                                                                                    if ($.browser.msie && $.browser.version.substr(0, 1) < 7) {
+                                                                                                    if (navigator.userAgent.match(/msie [6]/i)){
                                                                                                         $('li').has('ul').mouseover(function () {
                                                                                                             $(this).children('ul').css('visibility', 'visible');
                                                                                                         }).mouseout(function () {
