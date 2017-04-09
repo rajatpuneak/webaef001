@@ -180,7 +180,7 @@
             });
         </script>
         <script>
-            function myFunction() {
+            function canCel() {
           document.getElementById("ff").reset();
 }
 </script>
@@ -387,7 +387,7 @@
                                             <div class="form-actions">
                                            
                                                 <button type="submit">Add Data</button>
-                                                <button type="button" onclick="myFunction()">Cancel</button>
+                                                <button type="button" onclick="canCel()">Cancel</button>
                                             </div>
                                         </form>
                                     </section>

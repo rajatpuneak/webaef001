@@ -19,9 +19,20 @@
          echo "ERROR!"; 
    }
 
+ $sql2 = "SELECT *  FROM login WHERE itsno = '$hofits'";
+   
+   $result2 = mysqli_query($db,$sql2);
+    
+    $count2 = mysqli_num_rows($result2);
+ 
+  if($count2 >= 1) {
+  $logindata= mysqli_fetch_array($result2,MYSQLI_ASSOC);
+
+   
+  }else {
+     //  <!--$error = "Your Login Name or Password is invalid";-->
+         echo "ERROR!"; 
+   }
 
   
-  // if(!isset($_SESSION['hofits'])){
-  //    header("location:index.php");
-  // }
 ?>

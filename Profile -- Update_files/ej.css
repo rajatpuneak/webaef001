@@ -1,0 +1,653 @@
+@charset "utf-8";
+
+/* Reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+ul {
+	list-style: none;
+	list-style-type: none;
+	list-style-image: none;
+}
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+/* Basic */
+body{
+	margin: 0px;
+	text-align:left;
+	font: 12px/12px Arial, Verdana, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color:#333;
+	line-height:30px;
+	background: url('/imgs/eJCom_1431/bg.png') repeat-x #fff;
+	background-attachment: fixed;}
+p {
+	padding: 5px;
+	text-align: justify;
+	position: relative;
+}
+hr {
+	width:100%;
+	border: #b9babb 1px dashed; 
+}
+h1{
+	font:bold 20px/20px Arial;
+	letter-spacing: 1px;
+	color: #618c04;
+	padding:10px;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	text-align:left;
+}
+h2{
+	font:bold 14px/20px Arial;
+	letter-spacing: 1px;
+	color: #7bb106;
+	padding:5px;
+	border-bottom:#7bb106 1px dashed;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	width:95%;
+	text-align:left;
+}
+h3{
+	font:bold 20px/20px Arial; 
+	letter-spacing: 1px;
+	color: #b3268d;
+	padding:10px;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	text-align:left;
+}
+h4{ /*small fonts from h1*/
+	font:bold 16px/20px Arial;
+	letter-spacing: 1px;
+	color: #618c04;
+	padding:10px;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	text-align:left;
+}
+h5{
+	font:bold 12px/20px Arial;
+	letter-spacing: 1px;
+	color: #b3268d;
+	padding:10px;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+}
+.borderh1, .borderh2, .borderh4 {
+	border-bottom:#618c04 1px dashed;
+}
+.borderh3, .borderh5 {
+	border-bottom:#b3268d 1px dashed;
+}
+
+.lblMsg, .lblmsg, .dgPager, caption {
+	font-size:12px;
+	font-weight:bold;
+	color:#b3268d;
+	text-align:center;
+	letter-spacing: 1px;
+}
+table.tbl td {
+	text-align:left;
+	padding-left:5px;
+	border: #000 1px  dashed;
+}
+table.tblhover td {
+	text-align:left;
+	padding-left:5px;
+	border-bottom: #000 1px  dashed;
+}
+table.tblhover tr:hover {
+	background: url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #efefef; 
+}
+.borderright {
+	border-right: #b9babb 1px  dashed;
+}
+.header, .dgHeader, .dgFooter {
+	background: url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #618c04;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	letter-spacing: 1px;
+}
+input.text, input.textbox, input[type='text'], input[type='password'], input[type="file"], textarea, .textbox, .ejtextbox {
+	padding:3px;
+	color:#333;
+	background:#f9f9f9;
+	border: #dadad8 1px solid;
+	width:90%;
+	height:25px;
+}
+input.text:focus, input.textbox:focus, input[type='text']:focus, input[type='password']:focus, input[type="file"]:focus, textarea:focus, .textbox:focus {
+	font-weight:bold;
+	background:#fff;
+	border: #1cf061 1px solid;
+	
+}
+select, .cmb {
+	padding: 3px;
+	color: #666;
+	background: #fff;
+	border: #f2ebcf 1px solid;
+	width: 200px;
+	height: 25px;
+}
+.btn {
+	font:bold 12px/12px Arial;
+	text-transform: uppercase;
+	width:180px;
+	height:35px;
+	border: 1px solid #618c04;
+	color: #618c04;
+	text-shadow:1px 1px 1px #fff;
+	margin:5px;
+}
+.btnactive {
+	margin:5px;
+	background: url('/imgs/eJCom_1431/arrow_right.png') no-repeat right;
+	font:bold 12px/12px Arial;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background-color: #618c04;
+	width:180px;
+	height:35px;
+	border: 1px solid #618c04;
+	color: #fff;
+	text-shadow:1px 1px 1px #333;
+	margin:5px;
+}
+.btnactive:hover, .btn:hover {
+	background: url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #618c04;
+	color: #fff;
+	text-shadow:1px 1px 1px #333;
+}
+
+.lblejid {
+	font:bold 14px/10px Arial;
+	color:#921823;
+	letter-spacing: 2px;
+	text-shadow:1px 1px 1px #ccc;
+}
+.goldentext {
+	font: bold 18px/24px Calibri, "Lucida Grande", Verdana, Arial;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	letter-spacing: 2px;
+	color: #c58b01;
+}
+.maroontext {
+	font: bold 18px/24px Calibri, "Lucida Grande", Verdana, Arial;
+	text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff;
+	letter-spacing: 2px;
+	color: #b3268d;
+}
+.photo-loading, img.photo {
+	background: url('/imgs/eJCom_1431/loading.gif') #fff no-repeat 25px 25px;
+}
+.privacytext {
+	font: bold 12px/20px Verdana, "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+	padding: 15px;
+	border-top: #7d0144 1px dashed;
+	border-bottom: #7d0144 1px dashed;
+}
+.lowborder {
+	border-bottom: #ccc 1px dashed;
+	height: 24px
+}
+a:link, a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+a:hover {
+	color: #618c04;
+}
+.cmbAr {
+	padding: 3px;
+	font: 18px/18px "Al-Fatemi(lisaan-ud-Dawat)";
+	color: #333;
+	background: #fff;
+	border: #dadad8 1px solid;
+	width: 300px;
+	height: 30px;
+}
+.textAr {
+	font: 18px/18px "Al-Fatemi(lisaan-ud-Dawat)";
+}
+
+table.dg, table.dg td {
+	border: #b9babb 1px  dashed;
+	padding-left:5px;
+}
+table.dg tr.dgItem:hover, table.dg tr.dgAlt:hover {
+	background: url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #efefef; 
+}
+.dgItem, .dgAlt, .dgEdit, .dgSelect {
+	text-align:left;
+}
+.dgSelect {
+	background: #efefef; 
+}
+
+/*normal box*/
+div.box {
+	margin: 5px;
+	position: relative;
+	background-color: #fff;
+	border:1px solid #e5e5e5;
+	-moz-border-radius:11px;
+	-khtml-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:5px;
+	-moz-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	box-shadow:rgba(200,200,200,1) 0 4px 18px;
+}
+div.content {
+	padding: 1em; 
+	background: #fff;
+	text-align: justify;
+	overflow: auto;
+}
+
+
+/*special box*/
+div.boxspecial {
+	margin: 5px;
+	position: relative;
+	background-color: #fff;
+	border:1px solid #e5e5e5;
+	-moz-border-radius:20px;
+	-khtml-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:10px;
+	-moz-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 4px 18px;
+	box-shadow:rgba(200,200,200,1) 0 4px 18px;
+}
+div.contentspecial {
+	padding: 1em; 
+	background: #fff;
+	text-align: justify;
+	overflow: auto;
+}
+
+/* Menu */
+#menu {
+	position: fixed;
+	top:0px;
+	margin: 0;
+	width: 100%;
+	z-index: 952; /* comes over other controls [in fornt of all other controls] negative means behind other controls*/
+	display: block;
+	padding: 0;
+	background:url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #a4d131;
+	border-bottom: 2px solid #c7e466;
+}
+#navigation {
+	height: 43px;
+	margin: 0 auto;
+	padding: 0 52px 0 0;
+}
+a.menulogo:link, a.menulogo:visited {
+	position: absolute;
+	background: url('/imgs/eJCom_1431/menulogo1.png') no-repeat;
+	width: 300px;
+	height: 80px;
+	border: none;
+	margin: 0 0 0 52px;
+}
+#navigation a.menulogo:hover, #navigation a.menulogo:active{
+    background:url('/imgs/eJCom_1431/menulogo2.png') no-repeat;
+}
+#navigation ul {
+	float: right;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#navigation ul li{
+	float: left;
+	position: relative;
+	background: url('/imgs/eJCom_1431/navspacer.png') 1px 0 no-repeat;
+	margin: 0;
+	padding: 0;
+}
+#navigation li a, #navigation li a:link, #navigation li a:visited {
+	display: block;
+	background: url('/imgs/eJCom_1431/navspacer.png') 100% 0 no-repeat;
+	padding: 16px 5px 17px 11px;
+	margin: 0;
+	border-left: 1px solid #c7e466;
+	text-decoration: none;
+	
+	text-transform: uppercase;
+	color: #000;
+	font:bold 11px/12px Arial;
+	letter-spacing: 1px;
+	text-shadow:1px 1px 1px #fff;
+}
+#navigation li a.logout {
+	border-right: 1px solid #c7e466;
+}
+#navigation li a:hover, #navigation li a.youarehere, #navigation li a:active {
+	background:url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x #b3268d;
+	color: #fff;
+	text-shadow:1px 1px 1px #333;
+}
+#navigation li ul {
+	display: none;
+	position: absolute;
+	z-index: 5;
+	width: 200px;
+	top: 1em;
+	left: 0;
+	margin:32px 0 0 0;	/*This number bumps, dropdown below main row of buttons*/
+
+}
+#navigation li:hover ul, #navigation li.over ul {
+	display: block;
+}
+ul.dropdown {
+	position: relative;
+	z-index: 5;
+	background: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#navigation li ul.dropdown li a.secondary {
+	background:#c7e466;
+	display: block;
+	width: 200px;
+	padding: 5px 10px;
+	margin: 0;
+	border-bottom: 1px solid #a4d131;
+
+	color: #000;
+	font:bold 10px/12px Arial;
+	text-shadow:1px 1px 1px #fff;
+}
+#navigation li ul.dropdown li a:hover.secondary {
+	background: #a4d131; 
+	color: #fff;
+	text-shadow:1px 1px 1px #333;
+}
+#navigation li ul.dropdown li.bttmtab {
+	background: #b3268d;
+	width: 222px;
+	height: 2px;
+}
+
+/* Menu Name */
+#name {
+	margin-top:45px;
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+#menuname {
+	display: block;
+	margin: 0 auto;
+	float: right;
+	background: url('/imgs/eJCom_1431/tab_left.gif') 0 100% no-repeat;
+	padding: 0px 52px 0px 9px;
+}
+#menuname ul {
+	background: url('/imgs/eJCom_1431/tab_right.gif') 100% 100% no-repeat;
+	padding: 0 9px 0 0;
+	margin: 0;
+}
+
+#menuname ul li{
+	background: #6dbe1c;
+	padding:2px 5px;
+	color: #ffffff;
+}
+
+#menuname ul li a {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+}
+#menuname li b {
+	color: #fff;
+}
+.menunameAr {
+	font: 18px/18px "Al-Fatemi(lisaan-ud-Dawat)";
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+}
+
+/* footer */
+#footer {
+	width: 100%;
+	height: 165px;
+	float: left;
+}
+#footer_div {
+	margin-top:100px;
+	height: 65px;
+	background: url('/imgs/eJCom_1431/navrollshine.png') 0 0 repeat-x rgba(97, 140, 4, 0.9);
+}
+
+a.footerlogo:link, a.footerlogo:visited {
+    position: absolute;
+    border: none;
+    width: 105px;
+    height: 100px;
+    display: block; 
+	margin: 57px 0px 0px 45%;
+    background: url('/imgs/eJCom_1431/footerlogo.png') no-repeat ;
+}
+#footer_div ul.contact {
+	display: block;
+	padding: 15px 0px 0px 10px;
+	line-height:10px;
+}
+#footer_div ul.contact li.border {
+	height: 40px;
+	width: 72px;
+	float: left;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: #fff 1px dashed;
+}
+#footer ul.contact li a, #footer ul.contact li a:link, #footer ul.contact li a:visited {
+	font:bold 11px/14px Arial; 
+	color: #fafafa;
+	text-decoration: none;
+	margin: 0px;
+}
+#footer ul.contact li a:hover, #footer ul.contact a:active {
+    color: #fff;
+}
+#footer ul.contact li span {
+	color: #ffd50a;
+	text-transform: uppercase;
+}
+#footer_div ul.links {
+	display: block;
+	padding: 10px 0px 0px 55%;
+	line-height:10px;
+}
+#footer_div ul.links li.border {
+	height: 30px;
+	width: 72px;
+	float: left;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: #fff 1px dashed;
+}
+#footer ul.links li a, #footer ul.links li a:link, #footer ul.links li a:visited {
+	font:bold 11px/14px Arial; 
+	color: #fafafa;
+	text-decoration: none;
+	margin: 0px;
+}
+#footer ul.links li a:hover, #footer ul.links a:active {
+    color: #fff;
+}
+#footer ul.links li span {
+	color: #ffd50a;
+	text-transform: uppercase;
+}
+
+
+/* MHP Services box */
+ul.services {
+	display: block;
+	margin: 10px 0 0 5px;
+}
+ul.services li {
+	display: block;
+	height: 100px;
+}
+/* rs=RasmeSaifee */
+ul.services a.rs:link, ul.services a.rs:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/rs1.jpg') no-repeat;
+}
+ul.services a.rs:hover, ul.services a.rs:active {
+	background:url('/imgs/eJCom_1431/rs2.jpg') no-repeat;
+}
+/* bg=BloodGroup */
+ul.services a.bg:link, ul.services a.bg:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/bg1.jpg') no-repeat;
+}
+ul.services a.bg:hover, ul.services a.bg:active {
+	background:url('/imgs/eJCom_1431/bg2.jpg') no-repeat;
+}
+/* cl=Classified */
+ul.services a.cl:link, ul.services a.cl:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/cl1.jpg') no-repeat;
+}
+ul.services a.cl:hover, ul.services a.cl:active {
+	background:url('/imgs/eJCom_1431/cl2.jpg') no-repeat;
+}
+/* ts=TradeSearch */
+ul.services a.ts:link, ul.services a.ts:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/ts1.jpg') no-repeat;
+}
+ul.services a.ts:hover, ul.services a.ts:active {
+	background:url('/imgs/eJCom_1431/ts2.jpg') no-repeat;
+}
+/* lc=LostCard */
+ul.services a.lc:link, ul.services a.lc:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/lc1.jpg') no-repeat;
+}
+ul.services a.lc:hover, ul.services a.lc:active {
+	background:url('/imgs/eJCom_1431/lc2.jpg') no-repeat;
+}
+/* nl=newsLetter */
+ul.services a.nl:link, ul.services a.nl:visited {
+	border: none;
+	width: 162px;
+	height: 96px;
+	display: block; 
+	background: url('/imgs/eJCom_1431/nl1.jpg') no-repeat;
+}
+ul.services a.nl:hover, ul.services a.nl:active {
+	background:url('/imgs/eJCom_1431/nl2.jpg') no-repeat;
+}
+
+.btn1 {	BORDER-RIGHT: #618c04 1px solid; BORDER-TOP: #618c04 1px solid; MARGIN: 5px; FONT: bold 12px/12px Arial; TEXT-TRANSFORM: uppercase; BORDER-LEFT: #618c04 1px solid; WIDTH: 180px; COLOR: #618c04; BORDER-BOTTOM: #618c04 1px solid; HEIGHT: 35px; text-shadow: 1px 1px 1px #fff;cursor: pointer;
+
+}
+.lblmsg1 {	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #b3268d; LETTER-SPACING: 1px; TEXT-ALIGN: center
+}
+
+.btn1:hover, .btnactive  {
+background:url("/imgs/eJCom_1431/arrow_right.png") no-repeat scroll right center #618C04;
+border:1px solid #618C04;
+color:#FFFFFF;
+font:bold 12px/12px Arial;
+height:35px;
+letter-spacing:1px;
+margin:5px;
+text-shadow:1px 1px 1px #333333;
+text-transform:uppercase;
+width:180px;
+}
+
+.printbutton
+{
+	font-size:14px;
+	padding:10px;
+	color: #000000;
+	min-width:100px;
+}
+
+.breakhere
+{
+	page-break-before: always;
+}
+
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+    border: 1px solid #00CC00;
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+    border: 1px solid #CC0000;
+}
+
+#mardor, #mardop, #bairor, #bairop, #gairbaligr, #gairbaligp, #hamalr, #hamalp, #marhoomr, #marhoomp, #stotal, #gairr, #gairp
+{
+	font-weight:bold;
+}

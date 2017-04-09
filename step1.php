@@ -1,5 +1,16 @@
 <?php
    include('session.php');   
+
+
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+// Fetching variables of the form which travels in URL
+//if($name !=''&& $email !=''&& $contact !=''&& $address !='')
+//{
+//  To redirect form on a particular page
+
+header("location: step2.php");
+}
+//else{
 ?>
 
     <!DOCTYPE html>
@@ -140,61 +151,8 @@
         <div class="wrap-body">
             <!--////////////////////////////////////Header-->
             <div id="pgHeader">
-                <!--<header>
-                    <div class="zerogrid">
-                        <div class="wrap-header">
-                            <center>
-                                <div class="logo"><img alt="Aqa bismillah" src="images/ezgif.com-gif-maker.gif"></div>
-                            </center>
-                            <div class="row">
-                                <div class="col-2-3">
-                                    <div class="wrap-col">
-                                        <div class="logo">
-                                            <h1>ANJUMAN-E-FATEMI</h1>
-                                            <div class="logo"><img src="images/1.png" alt="" width="300" height="100" style="border:0"></div>
-                                            <h5>Dawoodi Bohara Jamaat Fatemi Mohalla, Poona</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-1-3">
-                                    <div class="wrap-col">
-                                        <div class="logo"><img src="images/1.png" alt="" width="300" height="100" style="border:0"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <nav id="menu-wrap">
-                            <div id="menu-trigger">Menu</div>
-                            <ul id="menu" style="display: none;">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="admin.html">Admin</a></li>
-                                <li><a href="committees.html">Committees</a></li>
-                                <li>
-                                    <a href="#">FMB</a>
-                                    <ul>
-                                        <li><a href="#">FMB Menu</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">FMB Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contacts</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>-->
             </div>
             <section id="container">
-                <!--<div class="wrap-container">
-                <div class="zerogrid">
-                    <div class="row" style="padding-left: 20px;">
-                        <div class="col-1-1">
-                            <div class="wrap-col">
-                                <h2>Please correct details wherever necessary</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
                 <div class="wrap-container" id="detailFormContainer">
                     <div class="zerogrid">
                         <div class="row" style="padding-left: 20px;">
@@ -203,17 +161,17 @@
                                     <!-------------------------->
                                     <section id="horizontal">
                                         <h1>Please correct details wherever necessary</h1>
-                                        <form id=ff>
+                                       <form name="form2" id="ff" method="post" >
                                             <fieldset>
                                                 <div class="row">
                                                     <div class="col-s-6">
                                                         <div class="row">
                                                             <div class="col-s-4">
-                                                                <label for="NAME">NAME :</label>
+                                                                <label for="NAME">Name :</label>
                                                             </div>
                                                             <div class="col-s-8">
                                                                 <input type="text" id="NAME" disabled="" value="<?php echo  $hofdata["name"] ?>">
-                                                                <p>*Un-Editable Text</p>
+                                                                
                                                             </div>
                                                         </div>
 
@@ -222,7 +180,7 @@
                                                                 <label for="emailId">Email Id :</label>
                                                             </div>
                                                             <div class="col-s-8">
-                                                                <span id="emailId" class="readonly"><?php echo  $hofdata["emailid"]?> </span>
+                                                                <input type="text" id="emailId" Disabled="" value="<?php echo  $hofdata["emailid"]?>">
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -231,103 +189,26 @@
                                                             </div>
                                                             <div class="col-s-8">
                                                                 <select id="fmbThaliSelect">
-                                    <option>Select</option>
-                                    <option>YES</option>
-                                    <option>NO</option>
-                                    <!--<option>4</option>
-                                    <option>5</option>-->
+                                    <option value="1" <?php if ($hofdata["fmb_thali"]==1) echo 'selected="selected"';?>>Yes</options>
+                                    <option value="2" <?php if ($hofdata["fmb_thali"]==0) echo 'selected="selected"';?>>No</options>
+
+                                          </select>
+                                                            </div>
+                                                        </div>
+
+                                                          <div class="row">
+                                                            <div class="col-s-4">
+                                                                <label for="QarzanHasanaSelect">Have You Registered For Qarzan Hasana Scheme :</label>
+                                                            </div>
+                                                            <div class="col-s-8" style="align-self: bottom">
+                                                                <select id="QarzanHasanaSelect">
+                                                                        <option value="1" <?php if ($hofdata["qarzan"]==1) echo 'selected="selected"';?>>Yes</options>
+                                                                        <option value="2" <?php if ($hofdata["qarzan"]==0) echo 'selected="selected"';?>>No</options>
+
                                 </select>
                                                             </div>
                                                         </div>
-                                                        <!--<div class="row">
-                                <div class="col-s-4">
-                                    <label for="multiple-select-default2">Multiple Select</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <select id="multiple-select-default2" multiple="" size="3">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="multiple-select-optgroup-default2">Multiple Select with opt groups</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <select id="multiple-select-optgroup-default2" multiple="" size="5">
-                                    <option selected=""> 1</option>
-                                    <optgroup label="Group 1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </optgroup>
-                                    <option> 2</option>
-                                    <option> 3</option>
-                                    <option> 4</option>
-                                    <option> 5</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-file2">File upload</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input id="input-file2" type="file">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-number2">Number</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="number" id="input-number2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-password2">Password</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="password" id="input-password2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-time2">Time</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="time" id="input-time2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-week2">Week</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="week" id="input-week2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-month2">Month</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="month" id="input-month2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-date2">Date</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="date" id="input-date2">
-                                </div>
-                            </div>-->
+                                                        
                                                     </div>
                                                     <div class="col-s-6">
                                                         <div class="row">
@@ -366,108 +247,7 @@
                                                             </div>
                                                         </div>
                                                         
-                                                        <div class="row">
-                                                            <div class="col-s-4">
-                                                                <label for="QarzanHasanaSelect">Have You Registered For Qarzan Hasana Scheme :</label>
-                                                            </div>
-                                                            <div class="col-s-8" style="align-self: bottom">
-                                                                <select id="QarzanHasanaSelect">
-                                    <option>Select</option>
-                                    <option>YES</option>
-                                    <option>NO</option>
-                                    <!--<option>4</option>
-                                    <option>5</option>-->
-                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <!--<div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-datetime-local2">Datetime Local</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="datetime-local" id="input-datetime-local2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-search2">Search</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="search" id="input-search2" placeholder="Search...">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-color2">Color</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="color" id="input-color2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-range2">Range</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="range" id="input-range2" min="0" max="100" value="50">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="input-email2">Email</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="email" id="input-email2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="check-disabled3">Disabled Checkbox</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="checkbox" id="check-disabled3" value="option1" disabled="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="check3">Checkbox 3</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="checkbox" id="check3" value="option1">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="check4">Checkbox 4</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="checkbox" id="check4" value="option2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="radio3">Radio 3</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="radio" id="radio3" name="radio" value="option2" checked="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="radio4">Radio 4</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <input type="radio" id="radio4" name="radio" value="option1">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-s-4">
-                                    <label for="textarea2">Textarea</label>
-                                </div>
-                                <div class="col-s-8">
-                                    <textarea id="textarea2"></textarea>
-                                </div>
-                            </div>-->
+                                                      
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -487,9 +267,9 @@
       if($count2<1)
       {
 
-          echo "<tr> <td>";
+          echo "<tr> <td></td><td>";
           echo  "No Family Record Found";
-          echo "</td></tr>";
+          echo "</td><td></td></tr>";
         
       } 
       else
@@ -509,12 +289,13 @@
       }
     
  ?>
+ 
                                                 </table>
                                             </div>
-                                            <div class="form-actions">
-                                           <input class="sendButton" type="submit" name="Submit" value="Next">
-                                                <button type="submit">Save changes</button>
-                                                <button type="button">Cancel</button>
+                                            <p></p>
+                                            <div class="wrap-col">
+                                            
+                                           <input class="sendButton" type="submit" name="Submit" value="Next" >
                                             </div>
                                         </form>
                                     </section>
